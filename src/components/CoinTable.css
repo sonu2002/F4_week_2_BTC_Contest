@@ -1,0 +1,66 @@
+.table-row {
+     animation: slideIn 0.5s ease-in-out;
+     transition: background-color 0.3s;
+   }
+   
+   .table-row:hover {
+     background-color: #333;
+   }
+   
+   .table-row.clicked {
+     background-color: #555;
+   }
+   
+   table {
+     width: 100%;
+     border-collapse: collapse;
+     margin-top: 20px;
+   }
+   
+   th, td {
+     padding: 10px;
+     text-align: left;
+     border-bottom: 1px solid #444;
+     animation: fadeIn 1s ease-in-out;
+   }
+   
+   th {
+     background-color: #333;
+   }
+   
+   td img {
+     width: 20px;
+     height: 20px;
+     vertical-align: middle;
+     margin-right: 10px;
+   }
+   
+   .positive {
+     color: #4caf50;
+   }
+   
+   .negative {
+     color: #f44336;
+   }
+   
+   @keyframes fadeIn {
+     from {
+       opacity: 0;
+       transform: translateY(-20px);
+     }
+     to {
+       opacity: 1;
+       transform: translateY(0);
+     }
+   }
+   
+   @keyframes slideIn {
+     from {
+       opacity: 0;
+       transform: translateX(-100px);
+     }
+     to {
+       opacity: 1;
+       transform: translateX(0);
+     }
+   }
